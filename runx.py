@@ -2,7 +2,7 @@ import os
 import time
 import unittest
 
-import BSTestRunner
+from libs import BSTestRunner
 from testcase.test_unittestsample import TestSequenceFunctions
 
 if __name__ == '__main__':
