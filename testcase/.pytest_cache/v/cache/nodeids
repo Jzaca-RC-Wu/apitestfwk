@@ -1,0 +1,5 @@
+[
+  "test_unittestsample.py::TestSequenceFunctions::test_choice",
+  "test_unittestsample.py::TestSequenceFunctions::test_sample",
+  "test_unittestsample.py::TestSequenceFunctions::test_shuffle"
+]

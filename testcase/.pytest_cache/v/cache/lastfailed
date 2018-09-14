@@ -1,0 +1,4 @@
+{
+  "test_unittestsample.py::TestSequenceFunctions::test_shuffle": true,
+  "unittestsample.py::TestSequenceFunctions::test_shuffle": true
+}
