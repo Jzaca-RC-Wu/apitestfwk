@@ -1,6 +1,7 @@
 import csv
 
 import pandas as pd
+import xlrd
 
 
 class RestoreData(object):
@@ -15,7 +16,31 @@ class RestoreData(object):
         return sheet_data
 
 
-def make_test_from_csv(csvfile, fieldnames=None):
+def get_xlxs_data(f, *args):
+    wb = xlrd.open_workbook(f)
+
+    if list(*args):
+        sh_names = list(*args)
+    else:
+        sh_names = wb.sheet_names()
+    headers = wb.sheet_by_index(0).row_values(0)
+    # print(headers)
+
+    data_s = []
+    for arg in sh_names:
+        # if not wb.sheet_by_name(arg):
+        #     print('%(arg)s is not exsit!!'.format(arg=arg))
+        #     pass
+        for i in range(1, wb.sheet_by_name(arg).nrows):
+            data = {}
+            for j in range(wb.sheet_by_name(arg).ncols):
+                data[headers[j]] = wb.sheet_by_name(arg).cell(i, j).value
+            data_s.append(data)
+    # print(data_s)
+    return data_s
+
+
+def get_csv_data(csvfile, fieldnames=None):
     """
     read csv file as dict
     :param csvfile: csv file
@@ -26,19 +51,23 @@ def make_test_from_csv(csvfile, fieldnames=None):
     dic_reader = csv.DictReader(f, fieldnames, dialect='excel')
     return dic_reader
 
+
 def make_request(case):
-    url = case['hose'] + case['api'] + "?" + case['parameters']
+    url = case['host'] + case['api'] + "?" + case['parameters']
     data_s = case['data']
     header = case['Headers']
     return url, header, data_s
 
 
-# print(RestoreDataFromCSV().make_test_from_csv("E:\\automatic\\apitestfwk\\test_data\\testcase.csv"))
+# print(RestoreDataFromCSV().get_csv_data("E:\\automatic\\apitestfwk\\test_data\\testcase.csv"))
 # # print(RestoreDataFromCSV().get_test_fieldnames())
 
 file = "E:\\automatic\\apitestfwk\\test_data\\testcase.csv"
-reader = make_test_from_csv(file)
-for data in reader:
-    print(data)
-    # for k in reader.fieldnames:
-    #     print(data[k])
+xlsxfile = "E:\\automatic\\apitestfwk\\test_data\\testcase1.xlsx"
+
+# sheets = get_xlxs_sheets(xlsxfile, ['login'])
+# print()
+
+sheets_data = get_xlxs_data(xlsxfile)
+# sheets_data = get_xlxs_data(xlsxfile, ['login', 'empty', 'register', 'Sheet1'])
+print(sheets_data)
