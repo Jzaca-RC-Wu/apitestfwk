@@ -1,4 +1,5 @@
 import csv
+import json
 
 import pandas as pd
 import xlrd
@@ -48,26 +49,57 @@ def get_csv_data(csvfile, fieldnames=None):
     :return: return file as dict
     """
     f = open(csvfile, 'r')
-    dic_reader = csv.DictReader(f, fieldnames, dialect='excel')
-    return dic_reader
+    dic_reader = csv.DictReader(f, fieldnames, dialect='excel', delimiter=',')
+    data_s = []
+    for row in dic_reader:
+        new_dict = {}
+        for key in row.keys():
+            new_dict[key] = row[key]
+        print(new_dict)
+        data_s.append(new_dict)
+    return data_s
+
+
+# def make_request(case):
+#     url = case[0]['host'] + case[0]['api']
+#     method = case[0]['method'].upper()
+#     paras = case[0]['paras']
+#     data = case[0]['data']
+#     # print(type(case[0]['headers']), case[0]['headers'])
+#     if case[0]['headers']:
+#         headers = eval(case[0]['headers'])
+#     else:
+#         headers = {}
+#     # print(headers)
+#     return url, method, paras, data, headers
 
 
 def make_request(case):
-    url = case['host'] + case['api'] + "?" + case['parameters']
-    data_s = case['data']
-    header = case['Headers']
-    return url, header, data_s
+    url = case['host'] + case['api']
+    method = case['method'].upper()
+    paras = case['paras']
+    data = case['data']
+    # print(type(case[0]['headers']), case[0]['headers'])
+    if case['headers']:
+        headers = eval(case['headers'])
+    else:
+        headers = {}
+    # print(headers)
+    return url, method, paras, data, headers
 
 
-# print(RestoreDataFromCSV().get_csv_data("E:\\automatic\\apitestfwk\\test_data\\testcase.csv"))
-# # print(RestoreDataFromCSV().get_test_fieldnames())
+# print(RestoreDataFromCSV().get_test_fieldnames())
 
-file = "E:\\automatic\\apitestfwk\\test_data\\testcase.csv"
-xlsxfile = "E:\\automatic\\apitestfwk\\test_data\\testcase1.xlsx"
+# file = "E:\\automatic\\apitestfwk\\test_data\\testcase.csv"
+# xlsxfile = "E:\\automatic\\apitestfwk\\test_data\\test_case.xlsx"
+#
+# # print(get_csv_data(file))
+# # dict_data = get_csv_data(file)
+#
+# dict_data = get_xlxs_data(xlsxfile)
+# print(dict_data)
+# make_request(dict_data)
+# print(make_request(dict_data[0]))
+# for i in len(dict_data):
+#     print(dict_data[i])
 
-# sheets = get_xlxs_sheets(xlsxfile, ['login'])
-# print()
-
-sheets_data = get_xlxs_data(xlsxfile)
-# sheets_data = get_xlxs_data(xlsxfile, ['login', 'empty', 'register', 'Sheet1'])
-print(sheets_data)

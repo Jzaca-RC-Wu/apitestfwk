@@ -3,12 +3,14 @@ import time
 import unittest
 
 from libs import BSTestRunner
+from testcase.baseapi_testcase import BaseApiTest
 from testcase.test_unittestsample import TestSequenceFunctions
 
 if __name__ == '__main__':
     testsuit = unittest.TestSuite()
     # testsuit.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestSequenceFunctions))
     testsuit.addTest(unittest.TestLoader().loadTestsFromTestCase(TestSequenceFunctions))
+    testsuit.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(BaseApiTest))
     now = time.strftime("%Y%m%d%H%M", time.localtime(time.time()))
     basedir = os.path.abspath(os.path.dirname(__file__))
     file_dir = os.path.join(basedir, 'test_Report')

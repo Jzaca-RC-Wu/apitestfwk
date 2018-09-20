@@ -6,23 +6,28 @@ import urllib.response
 
 
 class SendRequest(object):
-    def __init__(self, url, method='', fields={}, headers={}):
+
+    def __init__(self, url, method='GET', paras={}, data={}, headers={}):
         self.url = url
-        if isinstance(fields, dict):
-            self.fields = urllib.parse.urlencode(fields)
-        else:
-            self.fields = fields
         self.method = method
+
+        if isinstance(paras, dict):
+            self.paras = urllib.parse.urlencode(paras)
+        else:
+            self.paras = paras
+
+        self.data = data
         self.headers = headers
         # self.request = ''
 
     def geturlresp(self):
         if self.method.upper() == "GET" or not self.method:
-            if self.fields:
-                self.url = self.url + "?" + self.fields
-            request = urllib.request.Request(self.url, None, self.headers)
+            if self.paras:
+                self.url = self.url + self.paras
+                # self.url = self.url + "?" + self.fields
+            request = urllib.request.Request(self.url, data=None, headers=self.headers)
         elif self.method.upper() == "POST":
-            request = urllib.request.Request(self.url, self.fields.encode(), self.headers)
+            request = urllib.request.Request(self.url, data=self.fields.encode(), headers=self.headers)
         else:
             return
 
@@ -68,5 +73,5 @@ rooms = [541375, 1578057, 695989, 2075345, 2185, 2103779, 16463, 531250, 360055,
          2086556, 2094291, 206079, 2331449, 2367838, 379563, 393293, 2275846, 1689183, 1053681, 2369168, 1657768,
          2194969, 933804, 2312287, 2367022, 2260886, 2247548, 2368537, 2363588, 541992]
 
-print(getroominfosbyrooms(rooms, 'userId'))
-print(getroominfosbyrooms(rooms, 'domain'))
+# print(getroominfosbyrooms(rooms, 'userId'))
+# print(getroominfosbyrooms(rooms, 'domain'))
