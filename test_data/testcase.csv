@@ -1,0 +1,241 @@
+CaseID,case_name,host,api,method,headers,paras,data,expect_res,数据库校验字段,查询sql
+1,微博搜索,http://api.weibo.cn,/2/guest/cardlist,GET,,networktype=wifi&uicode=10000003&moduleID=708&checktoken=9b029e66e25ac86442e007f7cea5f212&featurecode=10000085&wb_version=3614&c=android&i=91c2d28&s=13f5496d&ft=0&ua=ZUK-ZUK%20Z2131__weibo__8.4.3__android__android6.0.1&wm=20003_0002&aid=01Ai9jGG__v4fWU80kJ6Q_KY0fGilxND6LDf3x2empYNoIUm8.&did=0e59b3ffd259c16147bca3c9320cd67b43aa4ee9&fid=100303type%3D1%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%26t%3D0type%3D1%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%26t%3D0&uid=1005182016574&v_f=2&v_p=60&from=1084395010&gsid=_2AkMsBM9Zf8NhqwJRmP0UxGnibYtyzQzEieKaWD6CJRMxHRl-wT9jqmEFtRV6C94uWMkYdXc9b-OChT0IZ-aaFRqpLcZ3&lang=zh_CN&lfid=231278&page=1&skin=default&count=10&oldwm=20003_0002&sflag=1&containerid=100303type%3D1%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%26t%3D0type,,"{
+    ""cardlistInfo"": {
+        ""v_p"": ""60"",
+        ""containerid"": ""100303type=1&q=接口测试&t=0type"",
+        ""title_top"": """",
+        ""total"": ""*"",
+        ""show_style"": 1,
+        ""starttime"": ""*"",
+        ""can_shared"": 0,
+        ""cardlist_menus"": [],
+        ""cardlist_head_cards"": [
+            {
+                ""head_type"": 0,
+                ""head_type_name"": ""channel_list"",
+                ""show_menu"": ""1"",
+                ""menu_scheme"": ""sinaweibo://cardlist?containerid=100303type%3D42%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95&extparam=100303type%3D1%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%26t%3D0type"",
+                ""channel_list"": ""*""
+            }
+        ],
+        ""toolbar_menus"": [],
+        ""page_size"": ""10"",
+        ""custom_toolbar_menus"": {
+            ""type"": 0,
+            ""handler_type"": 2,
+            ""menus"": [
+                {
+                    ""skip_format"": 1,
+                    ""type"": ""link"",
+                    ""name"": ""分享"",
+                    ""pic"": ""http://simg.s.weibo.com/20180323153149_toolbar_icon_share.png"",
+                    ""params"": {
+                        ""scheme"": ""wb_search_share""
+                    },
+                    ""actionlog"": {
+                        ""act_code"": 554,
+                        ""ext"": ""*"",
+                        ""luicode"": """",
+                        ""uicode"": ""10000003"",
+                        ""fid"": ""100303type=1&q=接口测试&t=0type""
+                    }
+                },
+                {
+                    ""skip_format"": 1,
+                    ""type"": ""link"",
+                    ""name"": ""参与讨论"",
+                    ""pic"": ""http://simg.s.weibo.com/20180319194319_post.png"",
+                    ""title_color"": ""#FF8200"",
+                    ""params"": {
+                        ""scheme"": ""sinaweibo://sendweibo?content=#接口测试#""
+                    },
+                    ""actionlog"": {
+                        ""act_code"": 554,
+                        ""ext"": ""*"",
+                        ""luicode"": """",
+                        ""uicode"": ""10000003"",
+                        ""fid"": ""100303type=1&q=接口测试&t=0type""
+                    }
+                },
+                {
+                    ""type"": ""toolbar_menu_list"",
+                    ""name"": ""更多"",
+                    ""scheme"": {
+                        ""index"": ""more""
+                    },
+                    ""params"": {
+                        ""menu_list"": [
+                            {
+                                ""type"": ""link"",
+                                ""name"": ""对应话题"",
+                                ""params"": {
+                                    ""scheme"": ""sinaweibo://searchall?containerid=231522&q=%23%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%23""
+                                }
+                            },
+                            {
+                                ""type"": ""link"",
+                                ""name"": ""微博热搜"",
+                                ""params"": {
+                                    ""scheme"": ""sinaweibo://pageinfo?containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Drealtimehot&title=%E5%BE%AE%E5%8D%9A%E7%83%AD%E6%90%9C""
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        ""shared_text"": ""快来搜索看看http://s.weibo.com/weibo/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95"",
+        ""share_containerid"": ""100103type%3D1%26q%3D%25E6%258E%25A5%25E5%258F%25A3%25E6%25B5%258B%25E8%25AF%2595"",
+        ""cardlist_title"": ""接口测试"",
+        ""desc"": """",
+        ""portrait"": ""http://h5.sinaimg.cn/upload/2016/07/29/557/link.png"",
+        ""shared_text_qrcode"": """",
+        ""share_content"": {
+            ""description"": ""接口测试"",
+            ""icon"": ""http://h5.sinaimg.cn/upload/2016/07/29/557/link.png""
+        },
+        ""page_type"": ""03"",
+        ""background"": """"
+    },
+    ""cards"": [
+        {
+            ""card_type"": 11,
+            ""show_type"": ""*"",
+            ""card_group"": ""*"",
+            ""openurl"": """"
+        },
+        {
+            ""card_type"": 11,
+            ""show_type"": ""*"",
+            ""card_group"": ""*"",
+            ""openurl"": """"
+        },
+        {
+            ""card_type"": 11,
+            ""show_type"": ""*"",
+            ""card_group"": ""*"",
+            ""title"": ""实时微博"",
+            ""openurl"": """"
+        }
+    ]
+}",containerid,
+2,微博搜索,,http://api.weibo.cn/2/guest/cardlist,GET,,,networktype=wifi&uicode=10000003&moduleID=708&checktoken=9b029e66e25ac86442e007f7cea5f212&featurecode=10000085&wb_version=3614&c=android&i=91c2d28&s=13f5496d&ft=0&ua=ZUK-ZUK%20Z2131__weibo__8.4.3__android__android6.0.1&wm=20003_0002&aid=01Ai9jGG__v4fWU80kJ6Q_KY0fGilxND6LDf3x2empYNoIUm8.&did=0e59b3ffd259c16147bca3c9320cd67b43aa4ee9&fid=100303type%3D1%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%26t%3D0type%3D1%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%26t%3D0&uid=1005182016574&v_f=2&v_p=60&from=1084395010&gsid=_2AkMsBM9Zf8NhqwJRmP0UxGnibYtyzQzEieKaWD6CJRMxHRl-wT9jqmEFtRV6C94uWMkYdXc9b-OChT0IZ-aaFRqpLcZ3&lang=zh_CN&lfid=231278&page=1&skin=default&count=10&oldwm=20003_0002&sflag=1&containerid=100303type%3D1%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%26t%3D0type,"{
+    ""cardlistInfo"": {
+        ""v_p"": ""60"",
+        ""containerid"": ""100303type=1&q=接口测试&t=0type"",
+        ""title_top"": """",
+        ""total"": ""*"",
+        ""show_style"": 1,
+        ""starttime"": ""*"",
+        ""can_shared"": 0,
+        ""cardlist_menus"": [],
+        ""cardlist_head_cards"": [
+            {
+                ""head_type"": 0,
+                ""head_type_name"": ""channel_list"",
+                ""show_menu"": ""1"",
+                ""menu_scheme"": ""sinaweibo://cardlist?containerid=100303type%3D42%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95&extparam=100303type%3D1%26q%3D%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%26t%3D0type"",
+                ""channel_list"": ""*""
+            }
+        ],
+        ""toolbar_menus"": [],
+        ""page_size"": ""10"",
+        ""custom_toolbar_menus"": {
+            ""type"": 0,
+            ""handler_type"": 2,
+            ""menus"": [
+                {
+                    ""skip_format"": 1,
+                    ""type"": ""link"",
+                    ""name"": ""分享"",
+                    ""pic"": ""http://simg.s.weibo.com/20180323153149_toolbar_icon_share.png"",
+                    ""params"": {
+                        ""scheme"": ""wb_search_share""
+                    },
+                    ""actionlog"": {
+                        ""act_code"": 554,
+                        ""ext"": ""*"",
+                        ""luicode"": """",
+                        ""uicode"": ""10000003"",
+                        ""fid"": ""100303type=1&q=接口测试&t=0type""
+                    }
+                },
+                {
+                    ""skip_format"": 1,
+                    ""type"": ""link"",
+                    ""name"": ""参与讨论"",
+                    ""pic"": ""http://simg.s.weibo.com/20180319194319_post.png"",
+                    ""title_color"": ""#FF8200"",
+                    ""params"": {
+                        ""scheme"": ""sinaweibo://sendweibo?content=#接口测试#""
+                    },
+                    ""actionlog"": {
+                        ""act_code"": 554,
+                        ""ext"": ""*"",
+                        ""luicode"": """",
+                        ""uicode"": ""10000003"",
+                        ""fid"": ""100303type=1&q=接口测试&t=0type""
+                    }
+                },
+                {
+                    ""type"": ""toolbar_menu_list"",
+                    ""name"": ""更多"",
+                    ""scheme"": {
+                        ""index"": ""more""
+                    },
+                    ""params"": {
+                        ""menu_list"": [
+                            {
+                                ""type"": ""link"",
+                                ""name"": ""对应话题"",
+                                ""params"": {
+                                    ""scheme"": ""sinaweibo://searchall?containerid=231522&q=%23%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%23""
+                                }
+                            },
+                            {
+                                ""type"": ""link"",
+                                ""name"": ""微博热搜"",
+                                ""params"": {
+                                    ""scheme"": ""sinaweibo://pageinfo?containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Drealtimehot&title=%E5%BE%AE%E5%8D%9A%E7%83%AD%E6%90%9C""
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        ""shared_text"": ""快来搜索看看http://s.weibo.com/weibo/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95"",
+        ""share_containerid"": ""100103type%3D1%26q%3D%25E6%258E%25A5%25E5%258F%25A3%25E6%25B5%258B%25E8%25AF%2595"",
+        ""cardlist_title"": ""接口测试"",
+        ""desc"": """",
+        ""portrait"": ""http://h5.sinaimg.cn/upload/2016/07/29/557/link.png"",
+        ""shared_text_qrcode"": """",
+        ""share_content"": {
+            ""description"": ""接口测试"",
+            ""icon"": ""http://h5.sinaimg.cn/upload/2016/07/29/557/link.png""
+        },
+        ""page_type"": ""03"",
+        ""background"": """"
+    },
+    ""cards"": [
+        {
+            ""card_type"": 11,
+            ""show_type"": ""*"",
+            ""card_group"": ""*"",
+            ""openurl"": """"
+        },
+        {
+            ""card_type"": 11,
+            ""show_type"": ""*"",
+            ""card_group"": ""*"",
+            ""openurl"": """"
+        },
+        {
+            ""card_type"": 11,
+            ""show_type"": ""*"",
+            ""card_group"": ""*"",
+            ""title"": ""实时微博"",
+            ""openurl"": """"
+        }
+    ]
+}",,
