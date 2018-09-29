@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="add method to get data from xlxs">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/panduan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/dict_cmp-sample.py" afterDir="false" />
+    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="新增测试数据样例">
+      <change afterPath="$PROJECT_DIR$/public/comparedata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/sample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/jsonfile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/SendRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/SendRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/panduan.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/panduan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/restore_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/restore_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runx.py" beforeDir="false" afterPath="$PROJECT_DIR$/runx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcase/baseapi_testcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/baseapi_testcase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_unittestsample.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_unittestsample.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,28 +73,30 @@
         <counts>
           <entry key="Python Console" value="131" />
           <entry key="csv" value="9" />
-          <entry key="py" value="8145" />
-          <entry key="txt" value="91" />
+          <entry key="py" value="10980" />
+          <entry key="txt" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="9" />
-          <entry key="PLAIN_TEXT" value="91" />
-          <entry key="Python" value="8276" />
+          <entry key="PLAIN_TEXT" value="110" />
+          <entry key="Python" value="11111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="6" />
-          <entry key="py" value="52" />
+          <entry key="jsonfile" value="1" />
+          <entry key="py" value="68" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="6" />
-          <entry key="Python" value="52" />
+          <entry key="JSON" value="1" />
+          <entry key="Python" value="68" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -105,40 +105,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/test_unittestsample.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/restore_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="75" selection-start-line="75" selection-end-line="88" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1537431831331" expanded="true" signature="84:85" ph="..." />
-                <marker date="1537431831331" expanded="true" signature="84:90" ph="..." />
-                <marker date="1537431831331" expanded="true" signature="387:1031" ph="..." />
-                <marker date="1537431831331" expanded="true" signature="1074:1079" ph="..." />
-                <marker date="1537431831331" expanded="true" signature="1545:2298" ph="..." />
-                <marker date="1537431831331" expanded="true" signature="1953:1958" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="25" column="88" lean-forward="true" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
+            <state relative-caret-position="437">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -147,71 +117,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/baseapi_testcase.py">
+        <entry file="file://$PROJECT_DIR$/samples/sample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+            <state relative-caret-position="418">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1537436093642" expanded="true" signature="414:775" ph="..." />
+                <marker date="1538209722255" expanded="true" signature="96:101" ph="..." />
+                <marker date="1538209722255" expanded="true" signature="202:288" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/comparedata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              <folding>
+                <marker date="1538211429191" expanded="true" signature="1440:1442" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python3/Lib/urllib/request.py">
+        <entry file="file://$PROJECT_DIR$/test_data/jsonfile.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_data/testcase.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/BSTestRunner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="790" column="36" selection-start-line="790" selection-start-column="36" selection-end-line="790" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/panduan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-              <folding>
-                <element signature="e#24#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/Log.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/dict_cmp-sample.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="104" lean-forward="true" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+            <state relative-caret-position="266">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -248,20 +182,23 @@
         <option value="$PROJECT_DIR$/samples.py" />
         <option value="$PROJECT_DIR$/samples/openpyxl-sample.py" />
         <option value="$PROJECT_DIR$/testcase/test_unittestsample.py" />
-        <option value="$PROJECT_DIR$/public/SendRequest.py" />
         <option value="$PROJECT_DIR$/test_data/testcase.csv" />
-        <option value="$PROJECT_DIR$/public/restore_data.py" />
         <option value="$PROJECT_DIR$/runx.py" />
         <option value="$PROJECT_DIR$/samples/dict_cmp-sample.py" />
-        <option value="$PROJECT_DIR$/public/panduan.py" />
+        <option value="$PROJECT_DIR$/public/restore_data.py" />
         <option value="$PROJECT_DIR$/testcase/baseapi_testcase.py" />
+        <option value="$PROJECT_DIR$/public/SendRequest.py" />
+        <option value="$PROJECT_DIR$/public/panduan.py" />
+        <option value="$PROJECT_DIR$/samples/sample.py" />
+        <option value="$PROJECT_DIR$/test_data/jsonfile" />
+        <option value="$PROJECT_DIR$/public/comparedata.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
+    <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -345,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.runx">
+  <component name="RunManager" selected="Python.comparedata">
     <configuration name="SendRequest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="apitestfwk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -367,49 +304,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dict_cmp-sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="apitestfwk" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/dict_cmp-sample.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="openpyxl-sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="apitestfwk" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/openpyxl-sample.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="restore_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="comparedata" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="apitestfwk" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -421,7 +316,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/public/restore_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/public/comparedata.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -451,20 +346,56 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="apitestfwk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/sample.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for baseapi_testcase.BaseApiTest.test_apis" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="apitestfwk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;baseapi_testcase.BaseApiTest.test_apis&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.restore_data" />
-      <item itemvalue="Python.SendRequest" />
-      <item itemvalue="Python.openpyxl-sample" />
       <item itemvalue="Python.runx" />
-      <item itemvalue="Python.dict_cmp-sample" />
+      <item itemvalue="Python.sample" />
+      <item itemvalue="Python.comparedata" />
+      <item itemvalue="Python.SendRequest" />
+      <item itemvalue="Python tests.pytest for baseapi_testcase.BaseApiTest.test_apis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.comparedata" />
+        <item itemvalue="Python.sample" />
         <item itemvalue="Python.runx" />
-        <item itemvalue="Python.dict_cmp-sample" />
-        <item itemvalue="Python.restore_data" />
+        <item itemvalue="Python tests.pytest for baseapi_testcase.BaseApiTest.test_apis" />
         <item itemvalue="Python.SendRequest" />
-        <item itemvalue="Python.openpyxl-sample" />
       </list>
     </recent_temporary>
   </component>
@@ -507,13 +438,24 @@
       <option name="project" value="LOCAL" />
       <updated>1537269100639</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="每日一新：0920">
+      <created>1537436402544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537436402544</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新增测试数据样例">
+      <created>1537436440435</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537436440435</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_unittestsample_py - 2018.09.13 at 11h 59m 13s.xml">
-      <configuration name="pytest in unittestsample.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_unittestsample_py - 2018.09.13 at 12h 07m 12s.xml">
       <configuration name="pytest in unittestsample.py" configurationId="tests" />
     </history-entry>
@@ -541,6 +483,9 @@
     <history-entry file="pytest_in_ddt-sample_py - 2018.09.17 at 19h 21m 53s.xml">
       <configuration name="pytest in ddt-sample.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_baseapi_testcase_BaseApiTest_test_apis - 2018.09.25 at 10h 33m 27s.xml">
+      <configuration name="pytest for baseapi_testcase.BaseApiTest.test_apis" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -552,26 +497,46 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24183351" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32848233" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991684" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49683878" visible="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49673203" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32952183" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952183" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50316125" side_tool="true" weight="0.32848233" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32848233" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24183351" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683878" visible="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49673203" weight="0.3991684" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952183" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952183" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50316125" side_tool="true" visible="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32848233" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -580,16 +545,11 @@
     <MESSAGE value="delete more un-useful excel&#10;adjust file framework" />
     <MESSAGE value="新增各个脚本" />
     <MESSAGE value="add method to get data from xlxs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add method to get data from xlxs" />
+    <MESSAGE value="每日一新：0920" />
+    <MESSAGE value="新增测试数据样例" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增测试数据样例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python3/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="601" column="35" lean-forward="true" selection-start-line="601" selection-start-column="35" selection-end-line="601" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1602740496/sys.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -663,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/xlwritter_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utilapis/reportfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -698,16 +651,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/samples.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/ddt-sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/openpyxl-sample.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -796,16 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/SendRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python3/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -827,6 +760,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="323" selection-start-line="323" selection-end-line="323" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/test_unittestsample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/BSTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="532" lean-forward="true" selection-start-line="532" selection-end-line="532" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Python3/Lib/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -834,80 +798,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/BSTestRunner.py">
+    <entry file="file://$PROJECT_DIR$/samples/xlwritter_sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="790" column="36" selection-start-line="790" selection-start-column="36" selection-end-line="790" selection-end-column="36" />
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/Log.py">
+    <entry file="file://$PROJECT_DIR$/samples/ddt-sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="475">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/dict_cmp-sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="104" lean-forward="true" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+        <state relative-caret-position="399">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/panduan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/test_unittestsample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4883">
+          <caret line="257" column="27" lean-forward="true" selection-start-line="257" selection-start-column="27" selection-end-line="257" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/restore_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="75" selection-start-line="75" selection-end-line="88" />
+        <state relative-caret-position="254">
+          <caret line="69" column="61" lean-forward="true" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1537431831331" expanded="true" signature="84:85" ph="..." />
-            <marker date="1537431831331" expanded="true" signature="84:90" ph="..." />
-            <marker date="1537431831331" expanded="true" signature="387:1031" ph="..." />
-            <marker date="1537431831331" expanded="true" signature="1074:1079" ph="..." />
-            <marker date="1537431831331" expanded="true" signature="1545:2298" ph="..." />
-            <marker date="1537431831331" expanded="true" signature="1953:1958" ph="..." />
+            <marker date="1537517740298" expanded="true" signature="72:73" ph="..." />
+            <marker date="1537517740298" expanded="true" signature="72:78" ph="..." />
+            <marker date="1537517740298" expanded="true" signature="375:857" ph="..." />
+            <marker date="1537517740298" expanded="true" signature="883:888" ph="..." />
+            <marker date="1537517740298" expanded="true" signature="1313:1602" ph="..." />
+            <marker date="1537517740298" expanded="true" signature="1337:1342" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/SendRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/baseapi_testcase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+        <state relative-caret-position="475">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1537436093642" expanded="true" signature="414:775" ph="..." />
+            <marker date="1538128884740" expanded="true" signature="457:697" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="25" column="88" lean-forward="true" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
+        <state relative-caret-position="437">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <marker date="1538209722255" expanded="true" signature="96:101" ph="..." />
+            <marker date="1538209722255" expanded="true" signature="202:288" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/jsonfile.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/comparedata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <marker date="1538211429191" expanded="true" signature="1440:1442" ph="..." />
           </folding>
         </state>
       </provider>

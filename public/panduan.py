@@ -1,4 +1,15 @@
 # -*- coding: utf-8 -*-
+import json
+
+# from interface.config.account import *
+
+'''
+返回json校验方法参数为：从Excel中读取的期望值data_test['qiwang']以及通过TestApi请求到的接口返回值
+当前count参数是为了避免重复调用json.loads方法（因为此方法所要传递的参数是string类型不然会Error）
+'''
+
+
+# -*- coding: utf-8 -*-
 import decimal
 import json
 import re
@@ -15,12 +26,27 @@ from .Log import LOG
 '''
 
 
+def cmp_dict(src_data, dst_data):
+    assert type(src_data) == type(dst_data), "type: '{}' != '{}'".format(type(src_data), type(dst_data))
+    if isinstance(src_data, dict):
+        assert len(src_data) == len(dst_data), "dict len: '{}' != '{}'".format(len(src_data), len(dst_data))
+        for key in src_data.keys():
+            assert key in dst_data.keys(), "{}中没有{}".format(dst_data, key)
+            cmp_dict(src_data[key], dst_data[key])
+    elif isinstance(src_data, list):
+        assert len(src_data) == len(dst_data), "list len: '{}' != '{}'".format(len(src_data), len(dst_data))
+        for src_list, dst_list in zip(sorted(src_data), sorted(dst_data)):
+            cmp_dict(src_list, dst_list)
+    else:
+        assert src_data == dst_data, "value '{}' != '{}'".format(src_data, dst_data)
+
+
 def expectJson(asserqingwang, fanhuijson, count=0):
     result = False
     if count == 0:
         # 格式化期望结果为json对象
         asserqingwang = json.loads(asserqingwang)
-        # print('期望值：', asserqingwang, '\n', '实际返回值：', fanhuijson)
+        print('期望值：', asserqingwang, '\n', '实际返回值：', fanhuijson)
         # 校验返回数据是否有新的不包含在期望值中的key
         if checkParem(asserqingwang, fanhuijson):
             print('存在新字段:', checkParem(asserqingwang, fanhuijson))
@@ -56,35 +82,8 @@ def expectJson(asserqingwang, fanhuijson, count=0):
     elif asserqingwang == fanhuijson or asserqingwang == '*':
         return True
     else:
-        # print('数据校验失败：', '期望值字段：', str(asserqingwang), '实际返回字段：', str(fanhuijson))
+        print('数据校验失败：', '期望值字段：', str(asserqingwang), '实际返回字段：', str(fanhuijson))
         return False
-
-def cmp_dict(src_data, dst_data):
-    assert type(src_data) == type(dst_data), "type: '{}' != '{}'".format(type(src_data), type(dst_data))
-    if isinstance(src_data, dict):
-        assert len(src_data) == len(dst_data), "dict len: '{}' != '{}'".format(len(src_data), len(dst_data))
-        for key in src_data.keys():
-            assert key in dst_data.keys(), "{}中没有{}".format(dst_data, key)
-            cmp_dict(src_data[key], dst_data[key])
-    elif isinstance(src_data, list):
-        assert len(src_data) == len(dst_data), "list len: '{}' != '{}'".format(len(src_data), len(dst_data))
-        for src_list, dst_list in zip(sorted(src_data), sorted(dst_data)):
-            cmp_dict(src_list, dst_list)
-    else:
-        assert src_data == dst_data, "value '{}' != '{}'".format(src_data, dst_data)
-
-
-def cmp_dict2(src_data, dst_data):
-    assert type(src_data) == type(dst_data), "type: '{}' != '{}'".format(type(src_data), type(dst_data))
-    if isinstance(src_data, dict):
-        for key in src_data:
-            assert key in dst_data.keys(), "{}中没有{}".format(dst_data, key)
-            cmp_dict2(src_data[key], dst_data[key])
-    elif isinstance(src_data, list):
-        for src_list, dst_list in zip(sorted(src_data), sorted(dst_data)):
-            cmp_dict2(src_list, dst_list)
-    else:
-        assert src_data == dst_data, "value '{}' != '{}'".format(src_data, dst_data)
 
 
 # 检测接口是否有新增字段
@@ -257,6 +256,7 @@ def checkSqlData(apijson, jsonkey, sql, dbname='depository'):
     else:
         LOG.info('填写测试预期值')
         raise ('请输入要验证的字段')
+
 """
 
 # 获取查询出的数据个数==满足条件的数据行数
@@ -268,8 +268,8 @@ def checkSqlData(apijson, jsonkey, sql, dbname='depository'):
 #     cur.close()
 #     conn.close()
 #     return curnum
-#
-#
+
+
 # # sql查询 查询结果（List）
 # def mysqlassertdata(dbname, strsql):
 #     conn = pymysql.connect(host=Mysqlhost, port=3307, user=MysqlName, passwd=MysqlPassword, db=dbname, charset='utf8')
@@ -298,9 +298,9 @@ def checkSqlData(apijson, jsonkey, sql, dbname='depository'):
 #     cur.close()
 #     conn.close()
 #     return sqldata
-#
-#
-# # 操作数据库增、删数据
+
+
+# 操作数据库增、删数据
 # def editData(dbname, strsql):
 #     conn = pymysql.connect(host=Mysqlhost, port=3307, user=MysqlName, passwd=MysqlPassword, db=dbname, charset='utf8')
 #     cur = conn.cursor()

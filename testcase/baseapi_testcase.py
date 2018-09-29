@@ -1,9 +1,10 @@
 import unittest
 
 import ddt
-
+import json
 from public import restore_data, SendRequest
-from public.panduan import expectJson, cmp_dict
+from public.comparedata import is_satisfy
+from public.panduan import expectJson
 
 file = "E:\\automatic\\apitestfwk\\test_data\\testcase.csv"
 xlfile = "E:\\automatic\\apitestfwk\\test_data\\test_case.xlsx"
@@ -19,9 +20,7 @@ class BaseApiTest(unittest.TestCase):
     @ddt.data(*cases)
     # @ddt.unpack
     def test_apis(self, cases):
-        # print(type(cases))
         url, method, paras, data, headers = restore_data.make_request(cases)
         resp = SendRequest.SendRequest(url, method, paras, data, headers).get_jsonresp()
-        # print(resp)
-        # self.assertEqual(True, expectJson(cases['expe_res'], resp))
-        self.assertEqual(True, cmp_dict(eval(cases['expe_res']), resp))
+        # self.assertEqual(True, is_satisfy(cases['expe_res'], resp), True)
+        self.assertEqual(True, expectJson(cases['expe_res'], resp), True)

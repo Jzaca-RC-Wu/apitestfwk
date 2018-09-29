@@ -37,6 +37,7 @@ class SendRequest(object):
         return resp  # , resp.info()
 
     def get_jsonresp(self):
+        print(json.load(self.geturlresp()))
         return json.load(self.geturlresp())
 
 
