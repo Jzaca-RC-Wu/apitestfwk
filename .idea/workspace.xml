@@ -67,15 +67,17 @@
         <counts>
           <entry key="Python Console" value="131" />
           <entry key="csv" value="9" />
-          <entry key="py" value="10984" />
+          <entry key="json" value="8" />
+          <entry key="py" value="11109" />
           <entry key="txt" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="9" />
+          <entry key="JSON" value="8" />
           <entry key="PLAIN_TEXT" value="110" />
-          <entry key="Python" value="11115" />
+          <entry key="Python" value="11240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -126,10 +128,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/comparedata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="449">
+              <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
               <folding>
-                <marker date="1538212000410" expanded="true" signature="1442:1444" ph="..." />
+                <marker date="1538218475059" expanded="true" signature="1525:1527" ph="..." />
               </folding>
             </state>
           </provider>
@@ -138,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_data/jsonfile.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="361">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -185,6 +187,7 @@
         <option value="$PROJECT_DIR$/public/panduan.py" />
         <option value="$PROJECT_DIR$/samples/sample.py" />
         <option value="$PROJECT_DIR$/test_data/jsonfile" />
+        <option value="$PROJECT_DIR$/test_data/jsonfile.json" />
         <option value="$PROJECT_DIR$/public/comparedata.py" />
       </list>
     </option>
@@ -453,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538211632245</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="新增测试数据样例">
+      <created>1538212053146</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538212053146</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -499,7 +509,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24183351" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -890,17 +899,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_data/jsonfile.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="361">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/comparedata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="449">
+          <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
-            <marker date="1538212000410" expanded="true" signature="1442:1444" ph="..." />
+            <marker date="1538218475059" expanded="true" signature="1525:1527" ph="..." />
           </folding>
         </state>
       </provider>
