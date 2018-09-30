@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/urlconfigs/Sports_Module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urlconfigs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urlconfigs/login_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/comparedata.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/comparedata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/baseapi_testcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/baseapi_testcase.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +72,7 @@
           <entry key="Python Console" value="131" />
           <entry key="csv" value="9" />
           <entry key="json" value="8" />
-          <entry key="py" value="11109" />
+          <entry key="py" value="12079" />
           <entry key="txt" value="110" />
         </counts>
       </usages-collector>
@@ -77,14 +81,14 @@
           <entry key="CSV" value="9" />
           <entry key="JSON" value="8" />
           <entry key="PLAIN_TEXT" value="110" />
-          <entry key="Python" value="11240" />
+          <entry key="Python" value="12210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="6" />
           <entry key="jsonfile" value="1" />
-          <entry key="py" value="68" />
+          <entry key="py" value="72" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -92,7 +96,7 @@
         <counts>
           <entry key="CSV" value="6" />
           <entry key="JSON" value="1" />
-          <entry key="Python" value="68" />
+          <entry key="Python" value="72" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -125,13 +129,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/comparedata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+            <state relative-caret-position="-216">
+              <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
-                <marker date="1538218475059" expanded="true" signature="1525:1527" ph="..." />
+                <marker date="1538279176670" expanded="true" signature="1525:1527" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcase/baseapi_testcase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="73" lean-forward="true" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,6 +158,43 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
               <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urlconfigs/login_module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+                <marker date="1538278741336" expanded="true" signature="82:87" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/SendRequest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/urlconfigs/Sports_Module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <marker date="1538279491535" expanded="true" signature="262:267" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,20 +235,22 @@
         <option value="$PROJECT_DIR$/runx.py" />
         <option value="$PROJECT_DIR$/samples/dict_cmp-sample.py" />
         <option value="$PROJECT_DIR$/public/restore_data.py" />
-        <option value="$PROJECT_DIR$/testcase/baseapi_testcase.py" />
         <option value="$PROJECT_DIR$/public/SendRequest.py" />
         <option value="$PROJECT_DIR$/public/panduan.py" />
         <option value="$PROJECT_DIR$/samples/sample.py" />
         <option value="$PROJECT_DIR$/test_data/jsonfile" />
         <option value="$PROJECT_DIR$/test_data/jsonfile.json" />
+        <option value="$PROJECT_DIR$/testcase/baseapi_testcase.py" />
+        <option value="$PROJECT_DIR$/urlconfigs/login_module.py" />
         <option value="$PROJECT_DIR$/public/comparedata.py" />
+        <option value="$PROJECT_DIR$/urlconfigs/Sports_Module.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -221,22 +276,12 @@
             <path>
               <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
               <item name="apitestfwk" type="462c0819:PsiDirectoryNode" />
-              <item name="samples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apitestfwk" type="462c0819:PsiDirectoryNode" />
-              <item name="test_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apitestfwk" type="462c0819:PsiDirectoryNode" />
               <item name="test_Report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
               <item name="apitestfwk" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
+              <item name="urlconfigs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
@@ -279,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.comparedata">
+  <component name="RunManager" selected="Python.runx">
     <configuration name="SendRequest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="apitestfwk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -388,9 +433,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.runx" />
         <item itemvalue="Python.comparedata" />
         <item itemvalue="Python.sample" />
-        <item itemvalue="Python.runx" />
         <item itemvalue="Python tests.pytest for baseapi_testcase.BaseApiTest.test_apis" />
         <item itemvalue="Python.SendRequest" />
       </list>
@@ -463,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538212053146</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="新增测试数据样例">
+      <created>1538219358150</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538219358150</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -508,14 +560,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24183351" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49683878" visible="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683878" weight="0.32848233" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49673203" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -560,20 +613,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="新增测试数据样例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1602740496/sys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="552" selection-start-line="552" selection-end-line="552" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/types.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2919">
-          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python3/Lib/unittest/runner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -855,37 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/SendRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/baseapi_testcase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1538128884740" expanded="true" signature="457:697" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samples/sample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -904,12 +912,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/baseapi_testcase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="73" lean-forward="true" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlconfigs/login_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <marker date="1538278741336" expanded="true" signature="82:87" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/comparedata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        <state relative-caret-position="-216">
+          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding>
-            <marker date="1538218475059" expanded="true" signature="1525:1527" ph="..." />
+            <marker date="1538279176670" expanded="true" signature="1525:1527" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/SendRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlconfigs/Sports_Module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <marker date="1538279491535" expanded="true" signature="262:267" ph="..." />
           </folding>
         </state>
       </provider>

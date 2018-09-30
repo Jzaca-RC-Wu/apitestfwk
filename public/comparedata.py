@@ -38,10 +38,10 @@ def is_satisfy(expect1, actual, is_json=False):
         # assert len(expect1) == len(actual), \
         #     'List length is not compared: actual {} not equal expect {}'.format(len(expect1), len(actual))
         # 将列表数据进行排序并进行对比
-        for l, e in (expect1, actual):
+        for l, e in expect1, actual:
             return is_satisfy(l, e, False)
     elif expect1 == actual or expect1 == "*":
-        print(expect1, actual)
+        # print(expect1, actual)
         return True
     else:
         print('Data check fail: expect: {}，actual is: {}'.format(str(actual), str(expect1)))
@@ -72,7 +72,7 @@ d1 = {'id': '2310549', 'domain': '2601334', 'title': '双排冲分中！', 'broa
 
 expect = "{'id': '2310549', 'domain': '2601334', 'title': '双排冲分中！', 'broadcast_begin': '1537509296', 'broadcast_status': '1', 'lockable': False, 'fee': 0, 'live_source': [[1, 3], [3]], 'stream_types': '9', 'stream_ratelevel': '', 'stream_id': '', 'viewers': 48312, 'isDynamic': 0, 'heatValue': 5512, 'moreinfo': [{'id': '2310549', 'domain': '2601334', 'title': '双排冲分中！', 'broadcast_begin': '1537509296', 'broadcast_status': '1', 'lockable': False, 'fee': 0, 'live_source': [[1, 3], [3]], 'stream_types': '9', 'stream_ratelevel': '', 'stream_id': '', 'viewers': 48312, 'isDynamic': 0, 'heatValue': 5512}, {'id': '2310549', 'domain': '2601334', 'title': '双排冲分中！', 'broadcast_begin': '1537509296', 'broadcast_status': '1', 'lockable': False, 'fee': 0, 'live_source': [[1, 3], [3]], 'stream_types': '9', 'stream_ratelevel': '', 'stream_id': '', 'viewers': 48312, 'isDynamic': 0, 'heatValue': 5512}]}"
 # """
-print(str(d1))
+# print(str(d1))
 # print(is_satisfy(a, b))
 # print(is_satisfy(d, c, True))
-print(is_satisfy(d, c))
+# print(is_satisfy(d, c))

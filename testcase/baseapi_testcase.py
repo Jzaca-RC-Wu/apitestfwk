@@ -22,5 +22,5 @@ class BaseApiTest(unittest.TestCase):
     def test_apis(self, cases):
         url, method, paras, data, headers = restore_data.make_request(cases)
         resp = SendRequest.SendRequest(url, method, paras, data, headers).get_jsonresp()
-        # self.assertEqual(True, is_satisfy(cases['expe_res'], resp), True)
-        self.assertEqual(True, expectJson(cases['expe_res'], resp), True)
+        self.assertEqual(True, is_satisfy(cases['expe_res'], resp), True)
+        # self.assertEqual(True, expectJson(cases['expe_res'], resp), True)
