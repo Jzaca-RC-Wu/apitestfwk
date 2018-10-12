@@ -12,18 +12,17 @@ class HouseList:
         self.url = url
 
     def get_xml(self):
-        resp = sdq(self.url).geturlresp()
-        # resp = requests.get(self.url)
-        # print(resp.text, type(resp.text))
-        # tree = html.parse(urlopen(self.url))
-        tree = html.parse(resp)
-        print(etree.tostring(tree))
-        r = tree.xpath("//table")
-        # r = tree.xpath('<table * </table>')
+        res = sdq(self.url).geturlresp()
+        tree = html.parse(res)
+        # print(etree.tostring(tree))
+        r = tree.xpath("//table[@class=\"Repeater\"]")
         print(len(r))
-        print(len(tree.xpath('//tabel/@class="Repeater"')))
-        # return r
+        return tree
 
+    def get_house_list(self):
+        # Todo
+        # for
+        pass
 
 resp = HouseList(HouseListUrl).get_xml()
 # print(resp)

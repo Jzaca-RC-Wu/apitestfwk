@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BJHouseinfo/HouseList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BJHouseinfo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BJHouseinfo/lxmlsample.py" afterDir="false" />
+    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="abb lxml 用例">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJHouseinfo/HouseList.py" beforeDir="false" afterPath="$PROJECT_DIR$/BJHouseinfo/HouseList.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,23 +69,23 @@
           <entry key="Python Console" value="131" />
           <entry key="csv" value="9" />
           <entry key="json" value="8" />
-          <entry key="py" value="12908" />
-          <entry key="txt" value="110" />
+          <entry key="py" value="13060" />
+          <entry key="txt" value="121" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="9" />
           <entry key="JSON" value="8" />
-          <entry key="PLAIN_TEXT" value="110" />
-          <entry key="Python" value="13039" />
+          <entry key="PLAIN_TEXT" value="121" />
+          <entry key="Python" value="13191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="6" />
           <entry key="jsonfile" value="1" />
-          <entry key="py" value="83" />
+          <entry key="py" value="84" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -95,7 +93,7 @@
         <counts>
           <entry key="CSV" value="6" />
           <entry key="JSON" value="1" />
-          <entry key="Python" value="83" />
+          <entry key="Python" value="84" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -103,23 +101,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BJHouseinfo/lxmlsample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="38">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+            <state relative-caret-position="442">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <marker date="1539337588803" expanded="true" signature="209:210" ph="..." />
+                <marker date="1539346250772" expanded="true" signature="209:210" ph="..." />
+                <marker date="1539346250772" expanded="true" signature="524:529" ph="..." />
+                <marker date="1539346250772" expanded="true" signature="524:533" ph="..." />
               </folding>
             </state>
           </provider>
@@ -170,8 +170,8 @@
         <option value="$PROJECT_DIR$/public/comparedata.py" />
         <option value="$PROJECT_DIR$/urlconfigs/Sports_Module.py" />
         <option value="$PROJECT_DIR$/public/SendRequest.py" />
-        <option value="$PROJECT_DIR$/BJHouseinfo/HouseList.py" />
         <option value="$PROJECT_DIR$/BJHouseinfo/lxmlsample.py" />
+        <option value="$PROJECT_DIR$/BJHouseinfo/HouseList.py" />
       </list>
     </option>
   </component>
@@ -252,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lxmlsample">
+  <component name="RunManager" selected="Python.HouseList">
     <configuration name="HouseList" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="apitestfwk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -367,8 +367,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lxmlsample" />
         <item itemvalue="Python.HouseList" />
+        <item itemvalue="Python.lxmlsample" />
         <item itemvalue="Python.runx" />
         <item itemvalue="Python.comparedata" />
         <item itemvalue="Python.sample" />
@@ -456,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538305876493</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="abb lxml 用例">
+      <created>1539340899617</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1539340899617</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -491,7 +498,7 @@
       <configuration name="pytest for baseapi_testcase.BaseApiTest.test_apis" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -509,11 +516,11 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49683878" visible="true" weight="0.40050697" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683878" weight="0.40050697" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49673203" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952183" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3282636" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952183" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3282636" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50316125" side_tool="true" weight="0.32848233" />
@@ -551,7 +558,8 @@
     <MESSAGE value="add method to get data from xlxs" />
     <MESSAGE value="每日一新：0920" />
     <MESSAGE value="新增测试数据样例" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增测试数据样例" />
+    <MESSAGE value="abb lxml 用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="abb lxml 用例" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://C:/Python3/Lib/unittest/loader.py">
@@ -843,16 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/SendRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urlconfigs/login_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -902,21 +900,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
+    <entry file="file://$PROJECT_DIR$/public/SendRequest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        <state relative-caret-position="-285">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <marker date="1539337588803" expanded="true" signature="209:210" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BJHouseinfo/lxmlsample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="38">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1539346250772" expanded="true" signature="209:210" ph="..." />
+            <marker date="1539346250772" expanded="true" signature="524:529" ph="..." />
+            <marker date="1539346250772" expanded="true" signature="524:533" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
