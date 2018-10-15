@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="abb lxml 用例">
+    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,13 +117,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="107">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <marker date="1539346250772" expanded="true" signature="209:210" ph="..." />
-                <marker date="1539346250772" expanded="true" signature="524:529" ph="..." />
-                <marker date="1539346250772" expanded="true" signature="524:533" ph="..." />
+                <marker date="1539571387578" expanded="true" signature="209:210" ph="..." />
+                <marker date="1539571387578" expanded="true" signature="524:529" ph="..." />
+                <marker date="1539571387578" expanded="true" signature="524:533" ph="..." />
               </folding>
             </state>
           </provider>
@@ -146,6 +146,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="64eac9e3-dd1a-4a8f-b820-e419bf02e3d9" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -180,9 +183,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1955" />
-    <option name="y" value="31" />
-    <option name="width" value="1711" />
+    <option name="x" value="123" />
+    <option name="y" value="61" />
+    <option name="width" value="1710" />
     <option name="height" value="923" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -481,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539569165833</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="abb lxml 用例">
+      <created>1539570991649</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1539570991649</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -526,20 +536,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1955" y="31" width="1711" height="923" extended-state="0" />
-    <editor active="true" />
+    <frame x="123" y="61" width="1710" height="923" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27435744" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27452153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683878" weight="0.40050697" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49683878" visible="true" weight="0.48795944" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49673203" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3282636" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952183" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3282636" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.26923078" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3282636" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50316125" side_tool="true" weight="0.32848233" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3282636" />
@@ -566,6 +575,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -937,13 +972,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="107">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-            <marker date="1539346250772" expanded="true" signature="209:210" ph="..." />
-            <marker date="1539346250772" expanded="true" signature="524:529" ph="..." />
-            <marker date="1539346250772" expanded="true" signature="524:533" ph="..." />
+            <marker date="1539571387578" expanded="true" signature="209:210" ph="..." />
+            <marker date="1539571387578" expanded="true" signature="524:529" ph="..." />
+            <marker date="1539571387578" expanded="true" signature="524:533" ph="..." />
           </folding>
         </state>
       </provider>
