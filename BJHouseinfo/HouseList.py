@@ -1,4 +1,4 @@
-from lxml import html
+from lxml import html, etree
 
 from public.SendRequest import SendRequest as sdq
 
@@ -10,6 +10,10 @@ class HouseList:
 
     def __init__(self, url):
         self.url = url
+        self.tree = html.parse(self.url)
+
+    def getitem(self, item):
+        return self.tree.xpath(item)
 
     def get_html(self):
         res = sdq(self.url).geturlresp()
@@ -19,33 +23,51 @@ class HouseList:
         # print(len(r))
         return tree
 
-    html = get_html
-
     def get_search_pages(self):
-        tree = self.get_html()
-        result = tree.xpath("//div[@id=\"cph_hl1_pagerTop\"]/a/@href")
-        pages_nums = result[-1].split("=")[1]
+        result = self.tree.xpath("//div[@id=\"cph_hl1_pagerTop\"]/a/@href")
+        if result:
+            pages_nums = result[-1].split("=")[1]
         print(pages_nums)
 
         print(result)
+        print(set(result))
         print(len(result))
-        # print(result[1].text)
         return pages_nums
 
     def get_house_pros_info(self):
-        tree = self.get_html()
-        result = tree.xpath('//table[@class=\"Repeater\"]')
+        result = self.tree.xpath('//table[@class=\"Repeater\"]')
         print(type(result[0]))
+        print(len(result))
+        print(result[0].text_content().strip())
+        for i in range(len(result[0])):
+            print(result[0][i].text_content().strip())
 
-        house_pros = []
-        for i in range(len(result)):
-            house = {}
-            house["houseimg"] = result[i].xpath['//div[@class="houseImg"]']
-            house["housename"] = result[i].xpath['//a[@class="url"]']
-            house["pre_num"] = result[i].xpath['//table[@]']
-            print(house)
+        pros = {}
+        pro_name_list = []
+        # result = self.tree.xpath('//div[@align=\"left\"]/a[@class=\"url\"]')
+        for pro in self.tree.xpath('//div[@align=\"left\"]/a[@class=\"url\"]'):
+            pro_name_list.append(pro.text)
+        pros['name'] = pro_name_list
+        pros['target'] = self.tree.xpath('//a[@class=\"url\"]/@href')
 
+        sale_list = []
+        for sale in self.tree.xpath('//table//td[@width="9%"]'):
+            sale_list.append(sale.text)
+        pros['pre_sales'] = sale_list
+
+        pros['pre_sale_credit'] = self.tree.xpath('//table//td/div[@align=\"left\"]')
+        print(pros['pre_sale_credit'][0].text)
+
+
+        print(pros)
 
 # resp = HouseList(HouseListUrl).get_html()
-print(HouseList(HouseListUrl).get_search_pages())
+
+# tree = html.parse(HouseListUrl)
+# print(tree.tostring())
+
+# print(HouseList(HouseListUrl).get_search_pages())
+
+
+print(HouseList(HouseListUrl).get_house_pros_info())
 # print(resp)

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="[feature] 获取搜索结果页总数">
+    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BJHouseinfo/BeautifulSoupSamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BJHouseinfo/reqFundSamp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJHouseinfo/HouseList.py" beforeDir="false" afterPath="$PROJECT_DIR$/BJHouseinfo/HouseList.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +70,9 @@
         <counts>
           <entry key="Python Console" value="131" />
           <entry key="csv" value="9" />
+          <entry key="dummy" value="8" />
           <entry key="json" value="8" />
-          <entry key="py" value="13776" />
+          <entry key="py" value="15014" />
           <entry key="txt" value="156" />
         </counts>
       </usages-collector>
@@ -76,15 +80,16 @@
         <counts>
           <entry key="CSV" value="9" />
           <entry key="JSON" value="8" />
-          <entry key="PLAIN_TEXT" value="156" />
-          <entry key="Python" value="13907" />
+          <entry key="PLAIN_TEXT" value="164" />
+          <entry key="Python" value="15145" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="6" />
           <entry key="jsonfile" value="1" />
-          <entry key="py" value="86" />
+          <entry key="py" value="91" />
+          <entry key="txt" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -92,7 +97,8 @@
         <counts>
           <entry key="CSV" value="6" />
           <entry key="JSON" value="1" />
-          <entry key="Python" value="86" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="91" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -108,12 +114,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="276">
+              <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
-                <marker date="1539578590577" expanded="true" signature="225:226" ph="..." />
-                <marker date="1539578590577" expanded="true" signature="566:567" ph="..." />
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1539603030640" expanded="true" signature="215:216" ph="..." />
+                <marker date="1539603030640" expanded="true" signature="232:233" ph="..." />
+                <marker date="1539603030640" expanded="true" signature="356:399" ph="..." />
+                <marker date="1539603030640" expanded="true" signature="660:661" ph="..." />
               </folding>
             </state>
           </provider>
@@ -123,7 +131,43 @@
         <entry file="file://$PROJECT_DIR$/BJHouseinfo/lxmlsample.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python3/Lib/site-packages/lxml/html/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BJHouseinfo/reqFundSamp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BJHouseinfo/BeautifulSoupSamp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BJHouseinfo/1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="212" column="33" selection-start-line="212" selection-start-column="28" selection-end-line="212" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -141,6 +185,10 @@
     <findStrings>
       <find>REPORT_TMPL</find>
       <find>DataFrame</find>
+      <find>oTable</find>
+      <find>table</find>
+      <find>bzdm</find>
+      <find>前海开源尊享货币A</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,13 +225,15 @@
         <option value="$PROJECT_DIR$/urlconfigs/Sports_Module.py" />
         <option value="$PROJECT_DIR$/public/SendRequest.py" />
         <option value="$PROJECT_DIR$/BJHouseinfo/lxmlsample.py" />
+        <option value="$PROJECT_DIR$/BJHouseinfo/reqFund.py" />
+        <option value="$PROJECT_DIR$/BJHouseinfo/BeautifulSoupSamp.py" />
         <option value="$PROJECT_DIR$/BJHouseinfo/HouseList.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="123" />
-    <option name="y" value="61" />
+    <option name="x" value="55" />
+    <option name="y" value="66" />
     <option name="width" value="1710" />
     <option name="height" value="923" />
   </component>
@@ -249,6 +299,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.HouseList">
+    <configuration name="BeautifulSoupSamp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="apitestfwk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BJHouseinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BJHouseinfo/BeautifulSoupSamp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="HouseList" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="apitestfwk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,27 +333,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BJHouseinfo/HouseList.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="comparedata" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="apitestfwk" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/public" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/public/comparedata.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,6 +362,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="reqFundSamp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="apitestfwk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BJHouseinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BJHouseinfo/reqFundSamp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="runx" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="apitestfwk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,41 +404,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="apitestfwk" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/sample.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.runx" />
-      <item itemvalue="Python.sample" />
-      <item itemvalue="Python.comparedata" />
       <item itemvalue="Python.HouseList" />
       <item itemvalue="Python.lxmlsample" />
+      <item itemvalue="Python.reqFundSamp" />
+      <item itemvalue="Python.BeautifulSoupSamp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.HouseList" />
+        <item itemvalue="Python.BeautifulSoupSamp" />
+        <item itemvalue="Python.reqFundSamp" />
         <item itemvalue="Python.lxmlsample" />
         <item itemvalue="Python.runx" />
-        <item itemvalue="Python.comparedata" />
-        <item itemvalue="Python.sample" />
       </list>
     </recent_temporary>
   </component>
@@ -508,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539578599508</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[feature] 获取搜索结果页总数">
+      <created>1539578893751</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1539578893751</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -553,7 +610,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="123" y="61" width="1710" height="923" extended-state="0" />
+    <frame x="55" y="66" width="1710" height="923" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27452153" />
@@ -561,14 +618,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3282636" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49683878" visible="true" weight="0.48795944" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49641147" visible="true" weight="0.31939164" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49673203" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3282636" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.26923078" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3282636" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50316125" side_tool="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49760765" weight="0.3282636" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5035885" side_tool="true" visible="true" weight="0.31939164" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3282636" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -634,16 +691,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="[feature] 获取搜索结果页总数" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python3/Lib/unittest/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="92" column="27" lean-forward="true" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Scripts/_testbuffer.pyd" />
-    <entry file="file://$PROJECT_DIR$/venv/Scripts/pip3.6.exe.manifest" />
-    <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg" />
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml" />
     <entry file="file://C:/Python3/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -916,13 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python3/Lib/site-packages/lxml/html/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10409">
-          <caret line="943" column="63" lean-forward="true" selection-start-line="943" selection-start-column="63" selection-end-line="943" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urlconfigs/login_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -985,18 +1025,55 @@
     <entry file="file://$PROJECT_DIR$/BJHouseinfo/lxmlsample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python3/Lib/site-packages/lxml/html/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BJHouseinfo/reqFundSamp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BJHouseinfo/BeautifulSoupSamp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python3/Lib/site-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="1004" column="8" selection-start-line="1004" selection-start-column="8" selection-end-line="1004" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BJHouseinfo/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="212" column="33" selection-start-line="212" selection-start-column="28" selection-end-line="212" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="276">
+          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1539578590577" expanded="true" signature="225:226" ph="..." />
-            <marker date="1539578590577" expanded="true" signature="566:567" ph="..." />
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1539603030640" expanded="true" signature="215:216" ph="..." />
+            <marker date="1539603030640" expanded="true" signature="232:233" ph="..." />
+            <marker date="1539603030640" expanded="true" signature="356:399" ph="..." />
+            <marker date="1539603030640" expanded="true" signature="660:661" ph="..." />
           </folding>
         </state>
       </provider>
