@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b3a1b4b5-905d-4d08-9104-95b4ef095719" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,23 +66,23 @@
           <entry key="Python Console" value="131" />
           <entry key="csv" value="9" />
           <entry key="json" value="8" />
-          <entry key="py" value="13060" />
-          <entry key="txt" value="121" />
+          <entry key="py" value="13742" />
+          <entry key="txt" value="156" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="9" />
           <entry key="JSON" value="8" />
-          <entry key="PLAIN_TEXT" value="121" />
-          <entry key="Python" value="13191" />
+          <entry key="PLAIN_TEXT" value="156" />
+          <entry key="Python" value="13873" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="6" />
           <entry key="jsonfile" value="1" />
-          <entry key="py" value="84" />
+          <entry key="py" value="86" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -92,7 +90,7 @@
         <counts>
           <entry key="CSV" value="6" />
           <entry key="JSON" value="1" />
-          <entry key="Python" value="84" />
+          <entry key="Python" value="86" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -105,26 +103,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BJHouseinfo/lxmlsample.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="297">
+              <caret line="49" column="52" lean-forward="true" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+                <marker date="1539578147393" expanded="true" signature="283:284" ph="..." />
+                <marker date="1539578147393" expanded="true" signature="603:608" ph="..." />
+                <marker date="1539578147393" expanded="true" signature="603:612" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BJHouseinfo/lxmlsample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-                <marker date="1539571387578" expanded="true" signature="209:210" ph="..." />
-                <marker date="1539571387578" expanded="true" signature="524:529" ph="..." />
-                <marker date="1539571387578" expanded="true" signature="524:533" ph="..." />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -207,16 +205,6 @@
               <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
               <item name="apitestfwk" type="462c0819:PsiDirectoryNode" />
               <item name="BJHouseinfo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apitestfwk" type="462c0819:PsiDirectoryNode" />
-              <item name="test_Report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apitestfwk" type="462c0819:PsiDirectoryNode" />
-              <item name="urlconfigs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apitestfwk" type="b2602c69:ProjectViewProjectNode" />
@@ -491,7 +479,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539570991649</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="abb lxml 用例">
+      <created>1539573248034</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1539573248034</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[feature] 获取搜索结果页总数">
+      <created>1539578224215</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1539578224215</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -537,12 +539,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="123" y="61" width="1710" height="923" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27452153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3282636" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49683878" visible="true" weight="0.48795944" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49673203" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -612,7 +615,8 @@
     <MESSAGE value="每日一新：0920" />
     <MESSAGE value="新增测试数据样例" />
     <MESSAGE value="abb lxml 用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="abb lxml 用例" />
+    <MESSAGE value="[feature] 获取搜索结果页总数" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] 获取搜索结果页总数" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://C:/Python3/Lib/unittest/loader.py">
@@ -965,20 +969,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BJHouseinfo/lxmlsample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="266">
+          <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BJHouseinfo/HouseList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="297">
+          <caret line="49" column="52" lean-forward="true" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-            <marker date="1539571387578" expanded="true" signature="209:210" ph="..." />
-            <marker date="1539571387578" expanded="true" signature="524:529" ph="..." />
-            <marker date="1539571387578" expanded="true" signature="524:533" ph="..." />
+            <marker date="1539578147393" expanded="true" signature="283:284" ph="..." />
+            <marker date="1539578147393" expanded="true" signature="603:608" ph="..." />
+            <marker date="1539578147393" expanded="true" signature="603:612" ph="..." />
           </folding>
         </state>
       </provider>
