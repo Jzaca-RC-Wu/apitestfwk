@@ -1,11 +1,9 @@
+from lxml import html
+
 from public.SendRequest import SendRequest as sdq
-from lxml import html, etree
-from urllib.request import urlopen
-import requests
 
 HouseListUrl = "http://www.gzbjfc.com/House/HouseList.aspx"
 HouseListUrl_page = "http://www.gzbjfc.com/House/HouseList.aspx?page={}"
-
 
 
 class HouseList:
@@ -21,8 +19,9 @@ class HouseList:
         # print(len(r))
         return tree
 
+    html = get_html
+
     def get_search_pages(self):
-        # Todo
         tree = self.get_html()
         result = tree.xpath("//div[@id=\"cph_hl1_pagerTop\"]/a/@href")
         pages_nums = result[-1].split("=")[1]
@@ -46,6 +45,7 @@ class HouseList:
             house["pre_num"] = result[i].xpath['//table[@]']
             print(house)
 
+
 # resp = HouseList(HouseListUrl).get_html()
-print(HouseList(HouseListUrl).get_house_pros_info())
+print(HouseList(HouseListUrl).get_search_pages())
 # print(resp)
