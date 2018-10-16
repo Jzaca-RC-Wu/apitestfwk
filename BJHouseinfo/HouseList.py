@@ -1,9 +1,12 @@
-from lxml import html, etree
+import csv
+import os
+
+from lxml import html
 
 from public.SendRequest import SendRequest as sdq
 
 HouseListUrl = "http://www.gzbjfc.com/House/HouseList.aspx"
-HouseListUrl_page = "http://www.gzbjfc.com/House/HouseList.aspx?page={}"
+HouseListUrl_page = "http://www.gzbjfc.com/House.aspx?page={}"
 
 
 class HouseList:
@@ -12,62 +15,68 @@ class HouseList:
         self.url = url
         self.tree = html.parse(self.url)
 
-    def getitem(self, item):
-        return self.tree.xpath(item)
+    def getitem(self, item, *args):
+        return self.tree.xpath(item.format(*args))
 
     def get_html(self):
         res = sdq(self.url).geturlresp()
         tree = html.parse(res)
-        # print(etree.tostring(tree))
-        r = tree.xpath("//table[@class=\"Repeater\"]")
-        # print(len(r))
         return tree
 
     def get_search_pages(self):
-        result = self.tree.xpath("//div[@id=\"cph_hl1_pagerTop\"]/a/@href")
+        result = self.getitem("//div[@id=\"cph_hl1_pagerTop\"]/a/@href")
         if result:
             pages_nums = result[-1].split("=")[1]
-        print(pages_nums)
-
-        print(result)
-        print(set(result))
-        print(len(result))
         return pages_nums
 
     def get_house_pros_info(self):
-        result = self.tree.xpath('//table[@class=\"Repeater\"]')
-        print(type(result[0]))
-        print(len(result))
-        print(result[0].text_content().strip())
-        for i in range(len(result[0])):
-            print(result[0][i].text_content().strip())
+        pros = []
+        content = self.tree.xpath('//table[@class=\"Repeater\"]')
+        pro_name = self.tree.xpath('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]'.format(1, 2))
+        pro_target = self.tree.xpath('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]//a/@href'.format(1, 2))
+        pro_attrs = self.tree.xpath('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]'.format(1, 4))
+        pro_presale = self.getitem('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]', 1, 6)
+        pro_preid = self.getitem('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]', 2, 2)
+        pro_price = self.getitem('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]', 2, 4)
+        pro_prenum = self.getitem('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]', 2, 6)
+        pro_address = self.getitem('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]', 3, 2)
+        pro_avrprice = self.getitem('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]', 3, 4)
+        pro_sale_url = self.getitem('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]//a/@href', 3, 5)
+        pro_manufactor = self.getitem('//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]', 4, 2)
 
-        pros = {}
-        pro_name_list = []
-        # result = self.tree.xpath('//div[@align=\"left\"]/a[@class=\"url\"]')
-        for pro in self.tree.xpath('//div[@align=\"left\"]/a[@class=\"url\"]'):
-            pro_name_list.append(pro.text)
-        pros['name'] = pro_name_list
-        pros['target'] = self.tree.xpath('//a[@class=\"url\"]/@href')
-
-        sale_list = []
-        for sale in self.tree.xpath('//table//td[@width="9%"]'):
-            sale_list.append(sale.text)
-        pros['pre_sales'] = sale_list
-
-        pros['pre_sale_credit'] = self.tree.xpath('//table//td/div[@align=\"left\"]')
-        print(pros['pre_sale_credit'][0].text)
-
-
-        print(pros)
-
-# resp = HouseList(HouseListUrl).get_html()
-
-# tree = html.parse(HouseListUrl)
-# print(tree.tostring())
-
-# print(HouseList(HouseListUrl).get_search_pages())
+        for i in range(len(content)):
+            pro = {}
+            pro['项目名称'] = pro_name[i].text_content()
+            pro['项目简介地址'] = pro_target[i]
+            pro['项目性质'] = pro_attrs[i].text_content()
+            pro['预售套数'] = pro_presale[i].text_content()
+            pro['预售证号'] = pro_preid[i].text_content()
+            pro['媒体报价'] = pro_price[i].text_content()
+            pro['可售套数'] = pro_prenum[i].text_content()
+            pro['项目地址'] = pro_address[i].text_content()
+            pro['成交均价'] = pro_avrprice[i].text_content()
+            pro['销售情况连接'] = pro_sale_url[i]
+            pro['开发商'] = pro_manufactor[i].text_content()
+            print(pro)
+            pros.append(pro)
+        # print(pros)
+        return pros
 
 
-print(HouseList(HouseListUrl).get_house_pros_info())
-# print(resp)
+def get_all_pros():
+    pages = HouseList(HouseListUrl).get_search_pages()
+    projects = []
+    if pages:
+        for i in range(int(pages)):
+            url = HouseListUrl_page.format(i)
+            projects.append(HouseList(url).get_house_pros_info())
+    return projects
+
+
+def writecsv_dict(file, dict):
+    with open(file, newline='') as f:
+        writer = csv.DictWriter(f)
+        writer.writerows(dict)
+
+
+writecsv_dict("E:\\automatic\\apitestfwk\\BJHouseinfo\\BJHouse.csv", get_all_pros())
