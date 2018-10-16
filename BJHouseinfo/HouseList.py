@@ -3,7 +3,7 @@ import os
 
 from lxml import html
 
-from public.SendRequest import SendRequest as sdq
+# from public.SendRequest import SendRequest as sdq
 
 HouseListUrl = "http://www.gzbjfc.com/House/HouseList.aspx"
 HouseListUrl_page = "http://www.gzbjfc.com/House.aspx?page={}"
@@ -18,10 +18,10 @@ class HouseList:
     def getitem(self, item, *args):
         return self.tree.xpath(item.format(*args))
 
-    def get_html(self):
-        res = sdq(self.url).geturlresp()
-        tree = html.parse(res)
-        return tree
+    # def get_html(self):
+    #     res = sdq(self.url).geturlresp()
+    #     tree = html.parse(res)
+    #     return tree
 
     def get_search_pages(self):
         result = self.getitem("//div[@id=\"cph_hl1_pagerTop\"]/a/@href")
@@ -68,14 +68,19 @@ def get_all_pros():
     projects = []
     if pages:
         for i in range(int(pages)):
-            url = HouseListUrl_page.format(i)
-            projects.append(HouseList(url).get_house_pros_info())
+            url = HouseListUrl_page.format(1)
+            page = HouseList(url).get_house_pros_info()
+            for pro in page:
+                projects.append(pro)
+            # projects =HouseList(url).get_house_pros_info()
+    print(projects)
     return projects
 
 
 def writecsv_dict(file, dict):
-    with open(file, newline='') as f:
-        writer = csv.DictWriter(f)
+    with open(file, 'w+', newline='', encoding='GBK') as f:
+        headers = [k for k in dict[0]]
+        writer = csv.DictWriter(f, fieldnames=headers)
         writer.writerows(dict)
 
 
