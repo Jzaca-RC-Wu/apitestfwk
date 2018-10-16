@@ -57,9 +57,8 @@ class HouseList:
             pro['成交均价'] = pro_avrprice[i].text_content()
             pro['销售情况连接'] = pro_sale_url[i]
             pro['开发商'] = pro_manufactor[i].text_content()
-            print(pro)
             pros.append(pro)
-        # print(pros)
+            # print(pro)
         return pros
 
 
@@ -68,12 +67,10 @@ def get_all_pros():
     projects = []
     if pages:
         for i in range(int(pages)):
-            url = HouseListUrl_page.format(1)
+            url = HouseListUrl_page.format(i)
             page = HouseList(url).get_house_pros_info()
             for pro in page:
                 projects.append(pro)
-            # projects =HouseList(url).get_house_pros_info()
-    print(projects)
     return projects
 
 
@@ -81,6 +78,7 @@ def writecsv_dict(file, dict):
     with open(file, 'w+', newline='', encoding='GBK') as f:
         headers = [k for k in dict[0]]
         writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
         writer.writerows(dict)
 
 
