@@ -1,9 +1,8 @@
 import csv
-import os
+import urllib.request
 
+from bs4 import BeautifulSoup
 from lxml import html
-
-# from public.SendRequest import SendRequest as sdq
 
 HouseListUrl = "http://www.gzbjfc.com/House/HouseList.aspx"
 HouseListUrl_page = "http://www.gzbjfc.com/House.aspx?page={}"
@@ -15,13 +14,8 @@ class HouseList:
         self.url = url
         self.tree = html.parse(self.url)
 
-    def getitem(self, item, *args):
-        return self.tree.xpath(item.format(*args))
-
-    # def get_html(self):
-    #     res = sdq(self.url).geturlresp()
-    #     tree = html.parse(res)
-    #     return tree
+    def getitem(self, path, *args):
+        return self.tree.xpath(path.format(*args))
 
     def get_search_pages(self):
         result = self.getitem("//div[@id=\"cph_hl1_pagerTop\"]/a/@href")
@@ -61,6 +55,19 @@ class HouseList:
             # print(pro)
         return pros
 
+    def getitembyBS4(self, path):
+        # todo
+        html = urllib.request.urlopen(self.url).read()
+        soup = BeautifulSoup(html, 'lxml-xml')
+        print(type(soup), soup.body)
+        print(soup.body.form.div.div.table.contents[0])
+        # content = soup.find_all(path)
+        # items = []
+        # for child in content.children:
+        #     print(child.contents)
+        #     items.append(child.contents)
+        # return items
+
 
 def get_all_pros():
     pages = HouseList(HouseListUrl).get_search_pages()
@@ -74,12 +81,14 @@ def get_all_pros():
     return projects
 
 
-def writecsv_dict(file, dict):
+def writecsv_dict(file, dict_x):
     with open(file, 'w+', newline='', encoding='GBK') as f:
-        headers = [k for k in dict[0]]
+        headers = [k for k in dict_x[0]]
         writer = csv.DictWriter(f, fieldnames=headers)
         writer.writeheader()
-        writer.writerows(dict)
+        writer.writerows(dict_x)
 
 
-writecsv_dict("E:\\automatic\\apitestfwk\\BJHouseinfo\\BJHouse.csv", get_all_pros())
+# writecsv_dict("E:\\automatic\\apitestfwk\\BJHouseinfo\\BJHouse.csv", get_all_pros())
+# HouseList(HouseListUrl).show()
+HouseList(HouseListUrl).getitembyBS4("'//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]")
