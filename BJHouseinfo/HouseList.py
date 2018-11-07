@@ -81,7 +81,7 @@ def get_all_pros():
     return projects
 
 
-def writecsv_dict(file, dict_x):
+def write_csv_dict(file, dict_x):
     with open(file, 'w+', newline='', encoding='GBK') as f:
         headers = [k for k in dict_x[0]]
         writer = csv.DictWriter(f, fieldnames=headers)
@@ -89,6 +89,6 @@ def writecsv_dict(file, dict_x):
         writer.writerows(dict_x)
 
 
-# writecsv_dict("E:\\automatic\\apitestfwk\\BJHouseinfo\\BJHouse.csv", get_all_pros())
+# write_csv_dict("E:\\automatic\\apitestfwk\\BJHouseinfo\\BJHouse.csv", get_all_pros())
 # HouseList(HouseListUrl).show()
-HouseList(HouseListUrl).getitembyBS4("'//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]")
+# HouseList(HouseListUrl).getitembyBS4("'//table[@class=\"Repeater\"]//table//tr[{}]/td[{}]")

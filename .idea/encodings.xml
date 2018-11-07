@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/BJHouseinfo/BJHouse.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cwlgov/ssq_开奖结果.csv" charset="GBK" />
     <file url="file://$PROJECT_DIR$/test_data/testcase.csv" charset="GBK" />
   </component>
 </project>
